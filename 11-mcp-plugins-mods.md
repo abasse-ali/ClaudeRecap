@@ -8,6 +8,12 @@ MCP est un standard ouvert qui connecte Claude à des **outils et services exter
 
 On trouve des connecteurs vérifiés dans l'**Anthropic Directory** (claude.ai/directory).
 
+Premier essai conseillé par la doc : le serveur MCP de la documentation de Claude Code (recherche plein texte, sans authentification) :
+
+```bash
+claude mcp add --transport http claude-code-docs https://code.claude.com/docs/mcp
+```
+
 ### Ajouter un serveur
 
 ```bash

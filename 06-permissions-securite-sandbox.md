@@ -118,7 +118,18 @@ Activez-la avec `/sandbox`. Les commandes de Claude (et leurs sous-processus) to
 | Réseau | Pas d'accès direct : un proxy local vérifie chaque hôte contre `sandbox.network.allowedDomains` |
 | Variables d'environnement | Héritées (option pour protéger les identifiants) |
 
-Deux modes : **auto-allow** (les commandes sandboxées passent sans demande) et **régulier** (demande normale). macOS utilise le sandbox natif ; Linux/WSL2 utilisent bubblewrap (`bwrap`) et `socat`. Commandes exclues : `sandbox.excludedCommands`. Pour aller plus loin, isolation par conteneur/VM ou dev container.
+Deux modes : **auto-allow** (les commandes sandboxées passent sans demande) et **régulier** (demande normale). macOS utilise le sandbox natif ; Linux/WSL2 utilisent bubblewrap (`bwrap`) et `socat`. Commandes exclues : `sandbox.excludedCommands`. Tous les réglages `sandbox.*` sont dans [19](19-reference-tous-les-reglages.md#sandbox-bash-isolé).
+
+### Choisir son niveau d'isolation
+
+| Approche | Ce qui est isolé | Docker ? | Mise en place |
+|----------|------------------|:--------:|---------------|
+| Bash en sandbox (`/sandbox`) | Commandes Bash, PowerShell, Monitor et leurs enfants | Non | Minimale (macOS), faible (Linux/WSL2) |
+| Sandbox runtime | Tout le processus Claude Code (outils de fichiers, MCP, hooks) | Non | Faible |
+| Dev container | Tout l'environnement de développement | Oui | Moyenne |
+| Conteneur personnalisé | Tout l'environnement | Oui | Moyenne à élevée |
+| Machine virtuelle | Tout le système | Non | Élevée |
+| Session cloud | Tout le système, hébergé par Anthropic | Non | Aucune (abonnement Claude) |
 
 ## Autres protections de sécurité
 

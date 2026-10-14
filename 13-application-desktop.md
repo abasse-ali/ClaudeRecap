@@ -78,7 +78,8 @@ Claude peut **ouvrir vos applications, voir l'écran, cliquer et taper** (aperç
 ## Sessions SSH et WSL
 
 - **SSH** : travailler sur une machine distante (utilise votre `~/.ssh/config`, hôtes de rebond) ; une tâche peut continuer pendant que Desktop est déconnecté ; liens pour ouvrir une session SSH ; connexions préconfigurées et liste d'hôtes autorisés pour les équipes.
-- **WSL** : choisir une distribution WSL comme environnement sous Windows.
+- **WSL** : choisir une distribution WSL 2 comme environnement sous Windows (section **WSL** du sélecteur d'environnement).
+- **Linux (bêta)** : Ubuntu et Debian via apt ; Cowork y tourne dans une VM (QEMU/KVM requis) ; computer use pas encore disponible.
 
 ## Raccourcis de l'onglet Code
 

@@ -45,6 +45,22 @@ Claude Code tourne dans vos workflows GitHub : il répond aux **mentions `@claud
 - Paramètres de l'action : `prompt` (texte ou invocation de skill), `claude_args` (ex. `--max-turns`, `--model`, `--allowedTools`), `anthropic_api_key` ou `claude_code_oauth_token`, `github_token`, `trigger_phrase` (défaut `@claude`), `plugins` et `plugin_marketplaces`, `settings`, `use_bedrock` / `use_vertex` / `use_foundry`.
 - Les normes du projet viennent du `CLAUDE.md`.
 
+### GitHub Actions avec un fournisseur cloud
+
+L'action fonctionne aussi via **Amazon Bedrock**, **Google Cloud Agent Platform** ou **Microsoft Foundry** (`use_bedrock`, `use_vertex`, `use_foundry`, identité fédérée OIDC côté cloud) au lieu de l'API Claude.
+
+### GitHub Enterprise Server (GHES)
+
+| Fonction | GHES |
+|----------|------|
+| Sessions cloud, téléport | ✅ (un Owner connecte l'instance une fois) |
+| Code Review automatique | ✅ |
+| Claude Security (claude.ai/security, bêta Enterprise) | ✅ |
+| Marketplaces de plugins | ✅ |
+| GitHub Actions | ✅ (workflow manuel ; `/install-github-app` réservé à github.com) |
+| Métriques de contribution | ❌ |
+| Serveur MCP GitHub | ❌ |
+
 ## GitLab CI/CD
 
 Même principe dans GitLab : un job dans `.gitlab-ci.yml` (clé API en variable masquée), déclenché par exemple par une mention `@claude` dans une issue ou une MR ; Claude travaille dans un conteneur isolé et propose ses changements via une MR. Fournisseurs : API Claude, Bedrock, Google Cloud.

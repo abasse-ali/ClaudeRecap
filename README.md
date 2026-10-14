@@ -29,6 +29,24 @@ Ce dépôt rassemble, dans des fichiers Markdown, **tout ce que Claude Code sait
 | 17 | [SDK, entreprise et coûts](17-sdk-entreprise-couts.md) | Agent SDK, fournisseurs cloud, gateways, réglages gérés, suivi de la consommation |
 | 18 | [Antisèche et bonnes pratiques](18-antiseche-et-bonnes-pratiques.md) | Les essentiels sur une page, workflows types, conseils |
 
+### Références complètes (tout, dans le détail)
+
+| # | Fichier | Contenu |
+|---|---------|---------|
+| 19 | [Tous les réglages](19-reference-tous-les-reglages.md) | **Les 245 clés** de `settings.json` et `~/.claude.json`, classées par thème, avec leur portée |
+| 20 | [Toutes les variables d'environnement](20-reference-variables-environnement.md) | **Les ~400 variables** (`ANTHROPIC_*`, `CLAUDE_CODE_*`, `MCP_*`, `OTEL_*`…) |
+| 21 | [Toutes les actions clavier](21-reference-raccourcis-et-actions-clavier.md) | Chaque action personnalisable, par contexte, avec sa touche par défaut ; format de `keybindings.json` |
+| 22 | [Hooks en détail](22-reference-hooks-detaillee.md) | Matchers de chaque événement, champs des 5 types de hooks, entrées JSON, codes de sortie, décisions possibles, recettes |
+| 23 | [Plugins, marketplaces et mods](23-plugins-marketplaces-mods-detail.md) | Manifeste, composants, commandes `claude plugin`, évaluations, `marketplace.json`, administration, API et événements des mods |
+| 24 | [Agent SDK](24-agent-sdk-detail.md) | Messages, options, fonctions et méthodes, sessions, outils personnalisés, hooks, hébergement |
+| 25 | [Administration et déploiement](25-administration-et-deploiement.md) | Fournisseurs, fonctions par forfait, réglages gérés, MCP géré, gateways, réseau, environnements cloud et auto-hébergés, analytics, sécurité, données, conformité |
+| 26 | [Fonctionnement interne](26-fonctionnement-interne.md) | Boucle agentique, ce qui survit à la compaction, cache de prompt, fichiers locaux, données de la barre d'état, terminal, accessibilité, monorepos |
+| 27 | [Dépannage et erreurs](27-depannage-et-erreurs.md) | Outils de diagnostic, problèmes d'installation et de connexion, catalogue des messages d'erreur |
+| 28 | [Glossaire](28-glossaire.md) | Tous les termes de Claude Code expliqués |
+| 29 | [Bibliothèque de prompts](29-bibliotheque-de-prompts.md) | Les prompts officiels prêts à copier, traduits, par étape du cycle de développement |
+| 30 | [Nouveautés et historique](30-nouveautes-et-historique.md) | Versions récentes, résumés hebdomadaires de 2026, fonctions retirées |
+| 31 | [Index de la documentation officielle](31-index-documentation-officielle.md) | Les **222 pages** de la doc officielle, chacune reliée au fichier qui la résume |
+
 ---
 
 ## Claude Code en 30 secondes
